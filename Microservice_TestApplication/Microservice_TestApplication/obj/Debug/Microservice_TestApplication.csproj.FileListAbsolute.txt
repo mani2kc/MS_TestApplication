@@ -1,0 +1,5 @@
+C:\Mani-Projects\DOTNET\Microservice_TestApplication\Microservice_TestApplication\bin\Debug\Microservice_TestApplication.exe.config
+C:\Mani-Projects\DOTNET\Microservice_TestApplication\Microservice_TestApplication\bin\Debug\Microservice_TestApplication.exe
+C:\Mani-Projects\DOTNET\Microservice_TestApplication\Microservice_TestApplication\bin\Debug\Microservice_TestApplication.pdb
+C:\Mani-Projects\DOTNET\Microservice_TestApplication\Microservice_TestApplication\obj\Debug\Microservice_TestApplication.exe
+C:\Mani-Projects\DOTNET\Microservice_TestApplication\Microservice_TestApplication\obj\Debug\Microservice_TestApplication.pdb

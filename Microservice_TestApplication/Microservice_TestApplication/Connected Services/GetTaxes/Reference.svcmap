@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="87963d02-7c0f-4892-8f9d-d331bbcc2ecf" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://chandra/GetTaxes/GetTaxes.svc?wsdl" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="GetTaxes.wsdl" MetadataType="Wsdl" ID="a7a03073-189a-4b34-9e53-eec97d289768" SourceId="1" SourceUrl="http://chandra/GetTaxes/GetTaxes.svc?wsdl" />
+    <MetadataFile FileName="GetTaxes.xsd" MetadataType="Schema" ID="b637886d-734a-442c-8a64-3c97f38bcd81" SourceId="1" SourceUrl="http://chandra/GetTaxes/GetTaxes.svc?xsd=xsd2" />
+    <MetadataFile FileName="GetTaxes1.xsd" MetadataType="Schema" ID="c8cf7293-7232-440f-8ed5-ecd6a034d7d2" SourceId="1" SourceUrl="http://chandra/GetTaxes/GetTaxes.svc?xsd=xsd1" />
+    <MetadataFile FileName="GetTaxes2.xsd" MetadataType="Schema" ID="064897f1-de11-4a91-a268-5feae0c0b75c" SourceId="1" SourceUrl="http://chandra/GetTaxes/GetTaxes.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

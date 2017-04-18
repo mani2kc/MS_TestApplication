@@ -1,0 +1,165 @@
+<endpoint address="http://localhost:8095/GetEstimate/mex"
+                  binding="mexHttpBinding"
+                  contract="IMetadataExchange" />
+        <endpoint address="net.tcp://localhost:8086/GetEstimate/mex"    
+                  binding="mexTcpBinding"
+                  contract="IMetadataExchange" />      
+
+http://localhost:60545/
+
+
+<endpoint address="net.tcp://localhost:8888/GetEstimate" 
+                  binding="netTcpBinding"
+                  contract="Microservice_WCF_library.IGetEstimate" />
+        <endpoint address="net.pipe://localhost/GetEstimate" 
+                  binding="netNamedPipeBinding" 
+                  contract="Microservice_WCF_library.IGetEstimate" />   
+
+<endpoint address="net.tcp://localhost:8888/GetEstimate" 
+                  binding="netTcpBinding"
+                  contract="Microservice_WCF_library.IGetEstimate" />
+        <endpoint address="net.pipe://localhost/GetEstimate" 
+                  binding="netNamedPipeBinding" 
+                  contract="Microservice_WCF_library.IGetEstimate" />
+
+
+<behavior name="Metadata">
+          <serviceMetadata httpGetEnabled="true"
+           httpGetUrl="http://localhost:8085/GetEstimate/meta" />
+        </behavior>
+
+
+
+<services>
+      <service behaviorConfiguration="Metadata" name="Microservice_WCF_library.GetEstimate">
+        <clear />
+        <endpoint address="basic" 
+                  binding="basicHttpBinding" 
+                  contract="Microservice_WCF_library.IGetEstimate" />
+        <endpoint address="mex" 
+                  binding="mexHttpBinding" 
+                  contract="IMetadataExchange" />
+        <endpoint address="ws" 
+                  binding="webHttpBinding" 
+                  contract="Microservice_WCF_library.IGetEstimate" />
+        
+        <endpoint address="http://localhost:8095/GetEstimate/mex"
+                  binding="mexHttpBinding"
+                  contract="IMetadataExchange" />
+                
+        
+        <host>
+          <baseAddresses>
+            <add baseAddress="http://localhost:8085/GetEstimate/" />
+          </baseAddresses>
+        </host>
+      </service>
+    </services>
+
+
+<endpoint address="net.tcp://localhost:8086/GetEstimate/mex"    
+                  binding="mexTcpBinding"
+                  contract="IMetadataExchange" />    
+
+
+<endpoint address="net.tcp://localhost:8888/GetEstimate" 
+                  binding="netTcpBinding"
+                  contract="Microservice_WCF_library.IGetEstimate" />
+
+
+
+C:\Windows\System32\inetsrv\config>notepad applicationHost.config
+
+C:\Windows\System32\inetsrv\config>notepad applicationHost.config
+
+C:\Windows\System32\inetsrv\config>appcmd.exe set app "Default Web Site/WCFservice" /enabledProtocols:http,net.pipe,net.tcp,net.msmq
+'appcmd.exe' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Windows\System32\inetsrv\config>cd..
+
+C:\Windows\System32\inetsrv>appcmd.exe set app "Default Web Site/WCFservice" /enabledProtocols:http,net.pipe,net.tcp,net.msmq
+APP object "Default Web Site/WCFservice" changed
+
+C:\Windows\System32\inetsrv>
+
+-------------------------------------------------------------------------------
+
+binding = "webHttpBinding" 
+behaviorConfiguration = "web" 
+
+behavior = webhttp 
+
+webserviceHost for without config 
+
+
+
+-------------------------------------------------
+
+
+IPC - Async and Sync 
+
+
+http,net.pipe,net.tcp,net.msmq
+
+Async - MQ  => RabbitMQ, NserviceBUS
+
+SYNC => REST - Weeb API (HTTP) 
+     => WCF - TCP / NET PIPE 
+
+
+
+https://msdn.microsoft.com/en-us/library/ms730158(v=vs.110).aspx
+
+
+
+1. full complete 
+
+2.  https://www.nginx.com/blog/building-microservices-inter-process-communication/ 
+
+http://stackoverflow.com/questions/20809735/what-is-the-right-way-to-communicate-between-a-c-sharp-server-and-windows-phone
+
+
+
+
+ -- 30 mins break - Done 
+
+
+
+3.  WCF vs web API   --  Web API - wee cant give outside as external system need to change 
+
+4.  TCP vs net pipe  - TCP is better to host in different sample 
+
+5. samples  
+
+
+
+------------------------------------ 
+
+
+
+
+4. talk track and GIT 
+
+5. New features + web api 
+
+ 
+---------------------------------------------------------------
+
+
+
+1. InstallUtil - not working - path 
+2. 
+
+3. System.ServiceModel.AddressAlreadyInUseException: There is already a listener on IP endpoint 0.0.0.0:808. This could happen if there is another application already listening on this endpoint or if you have multiple service endpoints in your service host with the same IP endpoint but with incompatible binding configurations. ---> System.Net.Sockets.SocketException: Only one usage of each socket address (protocol/network address/port) is normally permitted
+   a
+
+4. which is better to host the tcp service - windows service /IIS / self host 
+
+5. tcp vs net.pipe 
+
+System.ServiceModel.EndpointNotFoundException: 'Could not connect to net.tcp://localhost:8081/GetEstimate. The connection attempt lasted for a time span of 00:00:02.0736865
+
+
+
+
